@@ -19,7 +19,26 @@ while (again == "a")
     {
         Console.Write("Nezadali jste celé číslo! Zadejte číslo znovu: ");
     }
-    
+
+    int suma = 0;
+    int numberbackup = number; // záloha původního čísla pro výpis
+    int digit;
+
+    if (number < 0) // pokud je číslo záporné, uděláme z něj kladné
+    {
+        number = -number;
+    }
+
+    while (number > 0)
+    {
+        digit = number % 10; // získání poslední číslice
+        suma += digit; // přičtení číslice k součtu
+        number /= 10; // odstranění poslední číslice
+    }
+
+    Console.WriteLine($"Ciferný součet číslic {numberbackup} je {suma}.");
+
+
     //Opakovani programu
     Console.WriteLine();
     Console.WriteLine("Pro opakování programu stiskněte klávesu a.");
