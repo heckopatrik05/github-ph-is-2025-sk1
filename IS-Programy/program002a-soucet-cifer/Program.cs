@@ -29,7 +29,7 @@ while (again == "a")
         number = -number;
     }
 
-    while (number > 0)
+    while (number >= 10)
     {
         digit = number % 10; // získání poslední číslice
         suma += digit; // přičtení číslice k součtu
@@ -37,7 +37,6 @@ while (again == "a")
     }
 
     Console.WriteLine($"Ciferný součet číslic {numberbackup} je {suma}.");
-
 
     //Opakovani programu
     Console.WriteLine();
