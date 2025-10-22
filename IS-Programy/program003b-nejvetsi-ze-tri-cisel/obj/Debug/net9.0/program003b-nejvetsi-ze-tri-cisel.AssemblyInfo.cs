@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("program003b-nejvetsi-ze-tri-cisel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3b40f4cde02fa75a9acf2152fb3760958013f5d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+661c4c05c2bea11c7ff62094a65e1829c7e1127c")]
 [assembly: System.Reflection.AssemblyProductAttribute("program003b-nejvetsi-ze-tri-cisel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("program003b-nejvetsi-ze-tri-cisel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
