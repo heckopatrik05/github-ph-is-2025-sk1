@@ -1,0 +1,15 @@
+C:\aaa\IS-2025-Sk1\github-ph-is-2025-sk1\IS-Programy\program004c-obrazce\bin\Debug\net9.0\program004c-obrazce.exe
+C:\aaa\IS-2025-Sk1\github-ph-is-2025-sk1\IS-Programy\program004c-obrazce\bin\Debug\net9.0\program004c-obrazce.deps.json
+C:\aaa\IS-2025-Sk1\github-ph-is-2025-sk1\IS-Programy\program004c-obrazce\bin\Debug\net9.0\program004c-obrazce.runtimeconfig.json
+C:\aaa\IS-2025-Sk1\github-ph-is-2025-sk1\IS-Programy\program004c-obrazce\bin\Debug\net9.0\program004c-obrazce.dll
+C:\aaa\IS-2025-Sk1\github-ph-is-2025-sk1\IS-Programy\program004c-obrazce\bin\Debug\net9.0\program004c-obrazce.pdb
+C:\aaa\IS-2025-Sk1\github-ph-is-2025-sk1\IS-Programy\program004c-obrazce\obj\Debug\net9.0\program004c-obrazce.GeneratedMSBuildEditorConfig.editorconfig
+C:\aaa\IS-2025-Sk1\github-ph-is-2025-sk1\IS-Programy\program004c-obrazce\obj\Debug\net9.0\program004c-obrazce.AssemblyInfoInputs.cache
+C:\aaa\IS-2025-Sk1\github-ph-is-2025-sk1\IS-Programy\program004c-obrazce\obj\Debug\net9.0\program004c-obrazce.AssemblyInfo.cs
+C:\aaa\IS-2025-Sk1\github-ph-is-2025-sk1\IS-Programy\program004c-obrazce\obj\Debug\net9.0\program004c-obrazce.csproj.CoreCompileInputs.cache
+C:\aaa\IS-2025-Sk1\github-ph-is-2025-sk1\IS-Programy\program004c-obrazce\obj\Debug\net9.0\program004c-obrazce.sourcelink.json
+C:\aaa\IS-2025-Sk1\github-ph-is-2025-sk1\IS-Programy\program004c-obrazce\obj\Debug\net9.0\program004c-obrazce.dll
+C:\aaa\IS-2025-Sk1\github-ph-is-2025-sk1\IS-Programy\program004c-obrazce\obj\Debug\net9.0\refint\program004c-obrazce.dll
+C:\aaa\IS-2025-Sk1\github-ph-is-2025-sk1\IS-Programy\program004c-obrazce\obj\Debug\net9.0\program004c-obrazce.pdb
+C:\aaa\IS-2025-Sk1\github-ph-is-2025-sk1\IS-Programy\program004c-obrazce\obj\Debug\net9.0\program004c-obrazce.genruntimeconfig.cache
+C:\aaa\IS-2025-Sk1\github-ph-is-2025-sk1\IS-Programy\program004c-obrazce\obj\Debug\net9.0\ref\program004c-obrazce.dll
