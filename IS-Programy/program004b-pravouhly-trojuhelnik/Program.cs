@@ -2,7 +2,7 @@
         Console.ForegroundColor = ConsoleColor.Green;
 
         string again = "a";
-        while (again.ToLower() == "a")
+        while (again == "a")
         {
             Console.Clear();
             Console.WriteLine("#################################");
