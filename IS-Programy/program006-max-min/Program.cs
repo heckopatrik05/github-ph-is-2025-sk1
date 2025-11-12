@@ -79,9 +79,21 @@ while (again == "a")
     Console.WriteLine("Maximum: " + max + " na pozici " + postMax);
     Console.WriteLine("Minimum: " + min + " na pozici " + postMin);
 
+    if (max >= 3)
+    {
+        Console.WriteLine();
+        Console.WriteLine("Obrazec pro maximum:");
+        for (int i = 0; i < max; i++)
+        {
+            
+        }
+    }
+    else
+    {
+        Console.WriteLine("Obrazec se nevykresli, protože maximum je menší než 3.");
+    }
+
     Console.WriteLine();
     Console.WriteLine("Pro opakování programu stiskněte klávesu a.");
     again = Console.ReadLine();
-
-
 }
