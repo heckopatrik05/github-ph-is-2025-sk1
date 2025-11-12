@@ -85,7 +85,34 @@ while (again == "a")
         Console.WriteLine("Obrazec pro maximum:");
         for (int i = 0; i < max; i++)
         {
-            
+            int spaces, stars;
+            if (i < max / 2)
+            {
+                spaces = i;
+
+                stars = max - 2 * i;
+            }
+            else
+            {
+                spaces = max - i - 1;
+                if (max % 2 == 0) //sude
+                {
+                    stars = 2 * (i - max / 2) + 2;
+                }
+                else //liche
+                {
+                    stars = 2 * (i - max / 2) + 1;
+                }
+            }
+            for (int j = 0; j < spaces; j++)
+            {
+                Console.Write(" ");
+            }
+            for (int j = 0; j < stars; j++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine();
         }
     }
     else
