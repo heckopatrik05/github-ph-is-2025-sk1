@@ -106,10 +106,14 @@ while (again == "a")
             }
             for (int j = 0; j < spaces; j++)
             {
+                ConsoleColor colorpicture = Console.ForegroundColor;
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write(" ");
             }
             for (int j = 0; j < stars; j++)
             {
+                ConsoleColor colorpicture = Console.ForegroundColor;
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write("*");
             }
             Console.WriteLine();
@@ -119,6 +123,9 @@ while (again == "a")
     {
         Console.WriteLine("Obrazec se nevykresli, protože maximum je menší než 3.");
     }
+    
+    ConsoleColor originalColor2 = Console.ForegroundColor;
+    Console.ForegroundColor = ConsoleColor.Green;
 
     Console.WriteLine();
     Console.WriteLine("Pro opakování programu stiskněte klávesu a.");
