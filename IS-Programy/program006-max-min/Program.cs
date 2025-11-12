@@ -1,2 +1,87 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿ConsoleColor originalColor = Console.ForegroundColor;
+Console.ForegroundColor = ConsoleColor.Green;
+
+string again = "a";
+while (again == "a")
+{
+    Console.Clear();
+    Console.WriteLine("****************************");
+    Console.WriteLine("***** Generátor čísel  *****");
+    Console.WriteLine("****************************");
+    Console.WriteLine("******* Patrik Hečko *******");
+    Console.WriteLine("****************************");
+    Console.WriteLine();
+
+    Console.Write("Zadejte kolik bude čísel v řadě (celé číslo): ");
+    int n;
+    while (!int.TryParse(Console.ReadLine(), out n))
+    {
+        Console.Write("Nezadali jste celé číslo. Zadejte první číslo řady znovu: ");
+    }
+
+    Console.Write("Zadejte dolni mez řady (celé číslo): ");
+    int low;
+    while (!int.TryParse(Console.ReadLine(), out low))
+    {
+        Console.Write("Nezadali jste celé číslo. Zadejte dolní mez řady znovu: ");
+    }
+
+    Console.Write("Zadejte horní mez řady (celé číslo): ");
+    int top;
+    while (!int.TryParse(Console.ReadLine(), out top))
+    {
+        Console.Write("Nezadali jste celé číslo. Zadejte horní mez řady znovu: ");
+    }
+
+    Console.WriteLine();
+    Console.WriteLine("############################");
+    Console.WriteLine("kolik bude čísel v řadě: " + n);
+    Console.WriteLine("dolní mez: " + low);
+    Console.WriteLine("horní mez: " + top);
+    Console.WriteLine("############################");
+    Console.WriteLine();
+
+    // Definice pole
+    int[] myRandNumbs = new int[n];
+    Random myRandNumb = new Random();
+
+    Console.WriteLine("############################");
+    Console.WriteLine("Pseudonáhodná čísla: ");
+
+    for (int i = 0; i < n; i++)
+    {
+        myRandNumbs[i] = myRandNumb.Next(low, top + 1);
+        Console.Write(myRandNumbs[i] + ", ");
+    }
+
+
+    int max = myRandNumbs[0];
+    int min = myRandNumbs[0];
+    int postMax = 0;
+    int postMin = 0;
+
+    for (int i = 0; i < n; i++)
+    {
+        if (myRandNumbs[i] > max)
+        {
+            max = myRandNumbs[i];
+            postMax = i;
+        }
+        if (myRandNumbs[i] < min)
+        {
+            min = myRandNumbs[i];
+            postMin = i;
+        }
+    }
+
+    Console.WriteLine();
+    Console.WriteLine("############################");
+    Console.WriteLine("Maximum: " + max + " na pozici " + postMax);
+    Console.WriteLine("Minimum: " + min + " na pozici " + postMin);
+
+    Console.WriteLine();
+    Console.WriteLine("Pro opakování programu stiskněte klávesu a.");
+    again = Console.ReadLine();
+
+
+}
