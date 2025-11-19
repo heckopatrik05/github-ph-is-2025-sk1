@@ -57,16 +57,20 @@ while (again == "a")
         Console.Write(myRandNumbs[i] + ", ");
     }
 
+    int change = 0;
+    int compare = 0;
 
     for (int i = 0; i < n - 1; i++)
     {
         for (int j = 0; j < n - i - 1; j++)
         {
+            compare++;
             if (myRandNumbs[j] < myRandNumbs[j + 1])
             {
                 int temp = myRandNumbs[j + 1];
                 myRandNumbs[j + 1] = myRandNumbs[j];
                 myRandNumbs[j] = temp;
+                change++;
             }
         }
     }
@@ -77,6 +81,9 @@ while (again == "a")
     {
         Console.Write(myRandNumbs[i] + ", ");
     }
+    Console.WriteLine();
+    Console.WriteLine("Počet změn: " + change);
+    Console.WriteLine("Počet porovnání: " + compare);
 
     Console.WriteLine();
     Console.WriteLine("Pro opakování programu stiskněte klávesu a.");
