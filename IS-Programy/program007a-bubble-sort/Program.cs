@@ -60,7 +60,7 @@ while (again == "a")
 
     for (int i = 0; i < n - 1; i++)
     {
-        for (int j = 0; j < n - 1 - i; j++)
+        for (int j = 0; j < n - i - 1; j++)
         {
             if (myRandNumbs[j] < myRandNumbs[j + 1])
             {
@@ -73,7 +73,7 @@ while (again == "a")
 
     Console.WriteLine();
     Console.WriteLine("Seřazená čísla: ");
-    for (int i = 0; i < myRandNumbs.Length; i++)
+    for (int i = 0; i < n; i++)
     {
         Console.Write(myRandNumbs[i] + ", ");
     }
