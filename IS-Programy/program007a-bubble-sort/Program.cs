@@ -57,6 +57,9 @@ while (again == "a")
         Console.Write(myRandNumbs[i] + ", ");
     }
 
+    Stopwatch stopwatch = new Stopwatch();
+    stopwatch.Start();
+
     int change = 0;
     int compare = 0;
 
@@ -74,6 +77,7 @@ while (again == "a")
             }
         }
     }
+    stopwatch.Stop();
 
     Console.WriteLine();
     Console.WriteLine("Seřazená čísla: ");
@@ -84,6 +88,7 @@ while (again == "a")
     Console.WriteLine();
     Console.WriteLine("Počet změn: " + change);
     Console.WriteLine("Počet porovnání: " + compare);
+    Console.WriteLine("Čas běhu programu: " + stopwatch.ElapsedMilliseconds + " ms");
 
     Console.WriteLine();
     Console.WriteLine("Pro opakování programu stiskněte klávesu a.");
