@@ -85,12 +85,16 @@ while (again == "a")
         Console.Write(myRandNumbs[i] + ", ");
     }
     Console.WriteLine();
+    Console.WriteLine();
+    Console.WriteLine("############################");
     Console.WriteLine("Počet změn: " + change);
     Console.WriteLine("Počet porovnání: " + compare);
     Console.WriteLine("Čas běhu programu: " + stopwatch.ElapsedMilliseconds + " ms");
-
+    Console.WriteLine("############################");
+    Console.WriteLine();
+    
     int secondMax = 0;
-    bool foundSecond = false;
+    int nasloSe = 0; 
 
     if (n >= 2)
     {
@@ -100,18 +104,17 @@ while (again == "a")
             if (myRandNumbs[i] < maxVal)
             {
                 secondMax = myRandNumbs[i];
-                foundSecond = true;
-                break;
+                nasloSe = 1;
+                break;       
             }
         }
     }
 
-    Console.WriteLine();
-    if (foundSecond)
+    if (nasloSe == 1)
     {
         Console.WriteLine("Druhé největší číslo je " + secondMax + ".");
         Console.WriteLine("Obrazec:");
-        
+
         for (int r = 0; r < secondMax; r++)
         {
             if (r == 0 || r == 1 || r == secondMax - 1 || r == secondMax - 2)
