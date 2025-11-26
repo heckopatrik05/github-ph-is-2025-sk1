@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("program008-array-reversing")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("program009a-10to2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+784ed1d262dd28423d8469f2ba4e89260fca9e47")]
-[assembly: System.Reflection.AssemblyProductAttribute("program008-array-reversing")]
-[assembly: System.Reflection.AssemblyTitleAttribute("program008-array-reversing")]
+[assembly: System.Reflection.AssemblyProductAttribute("program009a-10to2")]
+[assembly: System.Reflection.AssemblyTitleAttribute("program009a-10to2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Vygenerované třídou WriteCodeFragment nástroje MSBuild
