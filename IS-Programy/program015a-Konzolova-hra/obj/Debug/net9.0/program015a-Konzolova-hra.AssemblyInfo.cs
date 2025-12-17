@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("program013a-NSD-NSN")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("program015a-Konzolova-hra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b85d11be45acd6778caaa9393112b5c516c257b")]
-[assembly: System.Reflection.AssemblyProductAttribute("program013a-NSD-NSN")]
-[assembly: System.Reflection.AssemblyTitleAttribute("program013a-NSD-NSN")]
+[assembly: System.Reflection.AssemblyProductAttribute("program015a-Konzolova-hra")]
+[assembly: System.Reflection.AssemblyTitleAttribute("program015a-Konzolova-hra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Vygenerované třídou WriteCodeFragment nástroje MSBuild
