@@ -108,6 +108,40 @@ while (again == "a")
         Console.Write("{0}; ", numbs[i]);
     }
 
+    // --- MOŽNOST B: SELECTION SORT (Sestupně) ---
+    for (int i = 0; i < n - 1; i++)
+    {
+        int maxIndex = i;
+        for (int j = i + 1; j < n; j++)
+        {
+            // Hledáme největší prvek ve zbytku pole
+            if (numbs[j] > numbs[maxIndex]) // > hledáme maximum
+            {
+                maxIndex = j;
+            }
+        }
+        // Prohození
+        int tmp = numbs[maxIndex];
+        numbs[maxIndex] = numbs[i];
+        numbs[i] = tmp;
+    }
+
+    // --- MOŽNOST C: INSERTION SORT (Sestupně) ---
+    // (Tento je momentálně aktivní - pokud chceš jiný, odkomentuj ho nahoře a zakomentuj tento)
+    for (int i = 1; i < n; i++)
+    {
+        int key = numbs[i];
+        int j = i - 1;
+
+        // Posouváme prvky, které jsou menší než key, doprava
+        while (j >= 0 && numbs[j] < key) // < key znamená sestupně
+        {
+            numbs[j + 1] = numbs[j];
+            j--;
+        }
+        numbs[j + 1] = key;
+    }
+
     // ------------------------------------
     // Druhé, třetí, čtvrté největší číslo - řeší správně duplicity
     // ------------------------------------ 
@@ -148,6 +182,22 @@ while (again == "a")
     Console.WriteLine("=================================="); 
     Console.WriteLine($"Medián: {median}");
 
+    // =========================================================================
+    // NOVÉ: Průměr (celočíselný)
+    // =========================================================================
+    long soucet = 0;
+    for (int i = 0; i < n; i++)
+    {
+        soucet += numbs[i];
+    }
+    
+    int prumer = (int)(soucet / n);
+    long zbytek = soucet % n; // Výpočet zbytku po dělení
+
+    Console.WriteLine();
+    Console.WriteLine("==================================");
+    Console.WriteLine($"Průměr: {prumer}, zbytek: {zbytek}");
+
     // ------------------------------------
     // Čtvrté největší číslo převedené do binární soustavy
     // ------------------------------------
@@ -160,29 +210,60 @@ while (again == "a")
         x /= 2; // to samé jako x = x / 2;
     }
 
-
     Console.WriteLine();
     Console.WriteLine("=================================="); 
     Console.WriteLine($"Čtvrté největší číslo v binární soustavě: {fourth}(2) = {bin}");
+
+    // =========================================================================
+    // NOVÉ: Výpočet NSD a NSN pro 2. a 4. největší číslo (BEZ FUNKCÍ)
+    // =========================================================================
+    Console.WriteLine();
+    Console.WriteLine("---------------------------------------");
+    // Ošetření: Musíme mít nalezená čísla a nesmí být 0
+    if (second > 0 && fourth > 0)
+    {
+        // 1. Příprava proměnných (uložíme si originály pro výpočet NSN)
+        ulong valA = (ulong)second;
+        ulong valB = (ulong)fourth;
+        ulong tempA = valA;
+        ulong tempB = valB;
+        while (tempA != tempB)
+        {
+            if (tempA > tempB)
+            {
+                tempA = tempA - tempB;
+            }
+            else
+            {
+                tempB = tempB - tempA;
+            }
+        }
+        ulong nsd = tempA; // Výsledek NSD
+        // 3. Výpočet NSN (vzoreček: (a * b) / NSD)
+        ulong nsn = (valA * valB) / nsd;
+        Console.WriteLine($"NSD čísel {second} a {fourth} je: {nsd}");
+        Console.WriteLine($"NSN čísel {second} a {fourth} je: {nsn}");
+    }
+    else
+    {
+        Console.WriteLine("NSD a NSN nelze vypočítat (nedostatek unikátních čísel nebo nula).");
+    }
+    // =========================================================================
+
 
     // ------------------------------------
     // Obrazec: výška podle mediánu a šířka podle třetího největšího čísla
     // ------------------------------------
     Console.WriteLine();
     Console.WriteLine("=================================="); 
-    
     int height = median;
     int width = third;
-
     Console.WriteLine($"Obrazec jehož výška je {height} a šířka je {width}");
     Console.WriteLine();
-
     int part = height / 3;
-
     // rozhodnutí podle sudé / liché šířky
     int smallWidth;
     int indent;
-
     // počet potřebných mezer pro první a třetí část obrazce
     if (width % 2 == 0)
     {
@@ -194,7 +275,6 @@ while (again == "a")
         smallWidth = 3;
         indent = (width - 3) / 2;
     }
-
     for (int i = 0; i < height; i++)
     {
         // horní část
@@ -228,10 +308,7 @@ while (again == "a")
             Console.WriteLine();
         }
     }
-    
     Console.WriteLine();
     Console.WriteLine("Pro opakování programu stiskněte klávesu a.");
     again = Console.ReadLine();
-
-
 }
